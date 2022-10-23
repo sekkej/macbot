@@ -14,7 +14,7 @@ intents                   = Intents.default()
 intents.message_content   = True
 intents.members           = True
 
-client_token = os.environ.get("https://cdn.discordapp.com/attachments/936657394962944010/1033768597526421525/unknown.png")
+client_token = os.environ.get("-1000socialcredit")
 
 client = commands.Bot(command_prefix = '!', intents = intents)
 client.remove_command('help')
