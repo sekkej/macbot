@@ -25,7 +25,10 @@ class NeegorLanguage(commands.Cog):
     async def neegor(self, ctx, *, text):
         translated = await self.translate(text)
 
-        await ctx.send(translated)
+        embed = Embed(title = 'Neegor Language', colour = 0xf2525a, description = text)
+        embed.set_footer(text = ctx.author, icon_url = ctx.author.avatar.url)
+
+        await ctx.send(embed=embed)
 
 # Setup cog...
 async def setup(bot):
